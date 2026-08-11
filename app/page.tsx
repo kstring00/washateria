@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { MobileBookingBar } from "@/components/MobileBookingBar";
@@ -40,8 +41,16 @@ export default function Home() {
     location: fullAddress,
   };
 
+  const brandStyles = {
+    "--site-bg": business.brand.background,
+    "--site-surface": business.brand.surface,
+    "--site-ink": business.brand.ink,
+    "--site-muted": business.brand.muted,
+    "--site-accent": business.brand.accent,
+  } as CSSProperties;
+
   return (
-    <>
+    <div className="site-root" style={brandStyles}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -61,6 +70,6 @@ export default function Home() {
       </main>
       <Footer />
       <MobileBookingBar />
-    </>
+    </div>
   );
 }
