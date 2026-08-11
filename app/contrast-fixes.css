@@ -1,0 +1,167 @@
+/*
+ * Contrast guardrails for dark surfaces.
+ *
+ * The template intentionally mixes light editorial sections with dark brand sections.
+ * These rules make foreground colors explicit on every dark surface so inherited
+ * colors from nearby light sections can never produce black-on-black text.
+ */
+
+.site-root {
+  color: var(--ink);
+}
+
+/* Primary dark surfaces */
+.site-header,
+.hero,
+.hero-card,
+.trust-strip,
+.section-dark,
+.staff-card,
+.how-section,
+.hours-card,
+.final-booking,
+.footer,
+.mobile-booking-bar {
+  color: var(--ink);
+}
+
+/* Header */
+.site-header .brand-copy strong,
+.site-header .icon-link,
+.site-header .desktop-nav a {
+  color: #f5f1e8;
+}
+
+.site-header .brand-copy small {
+  color: #b8b2a8;
+}
+
+/* Hero */
+.hero h1,
+.hero-card h2,
+.hero-proof strong,
+.quick-book-list strong,
+.quick-book-list a {
+  color: #f8f5ee;
+}
+
+.hero-lede {
+  color: #ddd8ce;
+}
+
+.hero-card > p,
+.hero-proof span,
+.quick-book-list small {
+  color: #b8b2a8;
+}
+
+/* Trust strip */
+.trust-item strong {
+  color: #f8f5ee;
+}
+
+.trust-item span {
+  color: #aaa49a;
+}
+
+/* Generic dark section headings */
+.section-dark .section-heading h2,
+.how-section .section-heading h2 {
+  color: #f8f5ee;
+}
+
+.section-dark .section-heading p,
+.how-section .section-heading p {
+  color: #b3ada3;
+}
+
+/* Team cards */
+.staff-card,
+.staff-card h3,
+.staff-card .round-icon {
+  color: #f8f5ee;
+}
+
+.staff-body > p {
+  color: #b8b2a8;
+}
+
+.specialty-list span {
+  color: #d4cfc6;
+}
+
+.staff-footer > span {
+  color: #aaa49a;
+}
+
+/* First-visit steps */
+.step-card h3 {
+  color: #f8f5ee;
+}
+
+.step-card p {
+  color: #b4aea4;
+}
+
+/* Dark hours card */
+.hours-card h3,
+.hours-list strong {
+  color: #f8f5ee;
+}
+
+.hours-list span {
+  color: #b8b2a8;
+}
+
+.hours-card > p {
+  color: #aaa49a;
+}
+
+/* Final conversion panel */
+.final-booking h2 {
+  color: #f8f5ee;
+}
+
+.final-booking p {
+  color: #b8b2a8;
+}
+
+/* Footer */
+.footer .brand-copy strong {
+  color: #f8f5ee;
+}
+
+.footer-grid > div:first-child p,
+.footer-grid a,
+.footer-grid span {
+  color: #aaa49a;
+}
+
+.footer-grid a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  color: #8f8a82;
+}
+
+.preview-note {
+  color: #c7aa72;
+}
+
+/* Keep intentional dark foregrounds on light/gold controls. */
+.button-accent,
+.mobile-booking-bar .mobile-primary,
+.photo-badge,
+.promo-card {
+  color: #16130e;
+}
+
+/* Keep light sections explicitly dark so the palette remains intentional. */
+.section-light,
+.section-warm,
+.promo-wrap,
+.service-card,
+.review-card {
+  color: #111111;
+}
