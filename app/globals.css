@@ -122,7 +122,7 @@ button, input { font: inherit; }
   padding: 100px 0 70px;
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(320px, .65fr);
-  align-items: end;
+  align-items: flex-end;
   gap: 80px;
 }
 .hero-copy { max-width: 720px; }
@@ -199,7 +199,7 @@ button, input { font: inherit; }
 }
 .section-heading p { max-width: 620px; margin: 20px 0 0; color: #6c685f; font-size: 15px; line-height: 1.7; }
 .section-dark .section-heading p { color: #97938b; }
-.split-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; }
+.split-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; }
 .text-link { display: inline-flex; align-items: center; gap: 8px; width: max-content; color: #2d2923; font-size: 13px; font-weight: 700; border-bottom: 1px solid rgba(13,13,13,.25); padding-bottom: 5px; }
 .text-link:hover { border-color: #111; }
 
@@ -227,7 +227,7 @@ button, input { font: inherit; }
 .staff-card:hover img { filter: grayscale(.1); transform: scale(1.025); }
 .photo-badge { position: absolute; top: 14px; left: 14px; padding: 7px 9px; background: var(--accent); color: #17130c; font-size: 8px; font-weight: 900; letter-spacing: .13em; }
 .staff-body { padding: 22px; }
-.staff-title-row { display: flex; justify-content: space-between; align-items: start; gap: 20px; }
+.staff-title-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; }
 .staff-title-row h3 { margin: 0; font: 750 25px/1.08 "Manrope", sans-serif; letter-spacing: -.04em; }
 .staff-title-row span { display: inline-block; margin-top: 5px; color: var(--accent); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
 .round-icon { width: 34px; height: 34px; border: 1px solid rgba(255,255,255,.16); display: grid; place-items: center; border-radius: 50%; }
@@ -254,7 +254,7 @@ button, input { font: inherit; }
 .promo-card h2 { margin: 7px 0 7px; font: 800 clamp(28px, 3.3vw, 45px)/1 "Manrope", sans-serif; letter-spacing: -.05em; }
 .promo-card p { margin: 0; color: rgba(17,17,17,.66); font-size: 12px; }
 
-.reviews-layout { padding-top: 90px; display: grid; grid-template-columns: .75fr 1.25fr; gap: 80px; align-items: start; }
+.reviews-layout { padding-top: 90px; display: grid; grid-template-columns: .75fr 1.25fr; gap: 80px; align-items: flex-start; }
 .reviews-summary .kicker { color: #7c653d; }
 .rating-display { margin-top: 15px; display: flex; align-items: baseline; gap: 6px; }
 .rating-display strong { font: 800 86px/.9 "Manrope", sans-serif; letter-spacing: -.08em; }
@@ -279,7 +279,7 @@ button, input { font: inherit; }
 .step-card h3 { margin: 64px 0 10px; font: 700 21px/1.1 "Manrope", sans-serif; letter-spacing: -.04em; }
 .step-card p { margin: 0; color: #817d75; font-size: 11px; line-height: 1.6; }
 
-.location-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 80px; align-items: start; }
+.location-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 80px; align-items: flex-start; }
 .location-facts { margin-top: 38px; display: grid; gap: 0; border-top: 1px solid rgba(13,13,13,.14); }
 .location-facts > div { min-height: 82px; display: grid; grid-template-columns: 24px 1fr; gap: 14px; align-items: center; border-bottom: 1px solid rgba(13,13,13,.14); }
 .location-facts svg { color: #8c6c39; }
@@ -288,7 +288,7 @@ button, input { font: inherit; }
 .location-facts small { color: #777168; font-size: 10px; }
 .location-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 26px; }
 .hours-card { padding: 30px; background: #111; color: #fff; box-shadow: var(--shadow); }
-.hours-head { display: flex; align-items: start; justify-content: space-between; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,.13); }
+.hours-head { display: flex; align-items: flex-start; justify-content: space-between; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,.13); }
 .hours-head h3 { margin: 8px 0 0; font: 700 28px/1 "Manrope", sans-serif; letter-spacing: -.04em; }
 .hours-head svg { color: var(--accent); }
 .hours-list { margin-top: 16px; }
@@ -298,17 +298,17 @@ button, input { font: inherit; }
 .hours-card > p { margin: 18px 0 0; color: #6f6b64; font-size: 9px; line-height: 1.55; }
 
 .final-booking { padding: 90px 0; background: #151515; border-top: 1px solid rgba(255,255,255,.1); border-bottom: 1px solid rgba(255,255,255,.1); }
-.final-booking-inner { display: flex; align-items: end; justify-content: space-between; gap: 50px; }
+.final-booking-inner { display: flex; align-items: flex-end; justify-content: space-between; gap: 50px; }
 .final-booking .kicker { color: var(--accent); }
 .final-booking h2 { margin: 9px 0 8px; font: 800 clamp(42px, 5.5vw, 72px)/.95 "Manrope", sans-serif; letter-spacing: -.06em; }
 .final-booking p { margin: 0; color: #8a867f; font-size: 13px; }
-.final-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: end; }
+.final-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
 
 .footer { padding: 64px 0 28px; background: #090909; color: #fff; }
 .footer-grid { display: grid; grid-template-columns: 1.5fr repeat(3, 1fr); gap: 50px; }
 .footer-brand { margin-bottom: 18px; }
 .footer-grid > div:first-child p { max-width: 240px; color: #74716b; font-size: 11px; line-height: 1.6; }
-.footer-grid > div:not(:first-child) { display: flex; flex-direction: column; align-items: start; gap: 9px; }
+.footer-grid > div:not(:first-child) { display: flex; flex-direction: column; align-items: flex-start; gap: 9px; }
 .footer-grid > div:not(:first-child) > strong { margin-bottom: 8px; color: var(--accent); font-size: 9px; letter-spacing: .14em; text-transform: uppercase; }
 .footer-grid a, .footer-grid span { color: #89857e; font-size: 10px; }
 .footer-grid a:hover { color: #fff; }
@@ -371,7 +371,7 @@ button, input { font: inherit; }
   .trust-item strong { font-size: 12px; }
   .trust-item span { font-size: 8px; }
 
-  .split-heading { display: grid; gap: 22px; align-items: start; }
+  .split-heading { display: grid; gap: 22px; align-items: flex-start; }
   .section-heading h2 { font-size: 43px; }
   .section-heading p { font-size: 13px; }
   .service-grid, .staff-grid { margin-top: 38px; grid-template-columns: 1fr; }
@@ -407,7 +407,7 @@ button, input { font: inherit; }
   .hours-card { padding: 24px 20px; }
 
   .final-booking { padding: 70px 0 104px; }
-  .final-booking-inner { display: grid; align-items: start; }
+  .final-booking-inner { display: grid; align-items: flex-start; }
   .final-booking h2 { font-size: 48px; }
   .final-actions { justify-content: stretch; }
   .final-actions .button { width: 100%; }
