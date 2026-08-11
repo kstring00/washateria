@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./contrast-fixes.css";
 import { business } from "@/config/business";
 
 export const metadata: Metadata = {
